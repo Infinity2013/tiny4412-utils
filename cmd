@@ -1,0 +1,12 @@
+emmc open n
+# kernel
+dnw 0x40600000
+# ramdisk
+dnw 0x41000000
+# dtb
+dnw 0x42000000
+
+bootm 0x40600000 0x41000000 0x42000000
+
+# u-boot.bin
+mmc write 1 0xc0000000 0x30 0x21D
