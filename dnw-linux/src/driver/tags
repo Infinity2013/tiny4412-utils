@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+BULKOUT_BUFFER_SIZE	secbulk.c	13;"	d	file:
+DRIVER_NAME	secbulk.c	11;"	d	file:
+SECBULK_MAJOR	secbulk.c	9;"	d	file:
+SECBULK_MINOR	secbulk.c	10;"	d	file:
+__this_module	secbulk.mod.c	/^struct module __this_module$/;"	v	typeref:struct:module
+__used	secbulk.mod.c	/^__used$/;"	v	file:
+__used	secbulk.mod.c	/^__used$/;"	v	typeref:struct:____versions	file:
+bulk_out_endpointAddr	secbulk.c	/^	__u8	bulk_out_endpointAddr;$/;"	m	struct:secbulk_dev	file:	access:public
+bulkout_buffer	secbulk.c	/^	char*	bulkout_buffer;$/;"	m	struct:secbulk_dev	file:	access:public
+io_mutex	secbulk.c	/^	struct mutex io_mutex;$/;"	m	struct:secbulk_dev	typeref:struct:secbulk_dev::mutex	file:	access:public
+obj-m	Makefile	/^obj-m := secbulk.o$/;"	m
+secbulk-m	Makefile	/^secbulk-m := secbulk.o$/;"	m
+secbulk_class	secbulk.c	/^static struct usb_class_driver secbulk_class = {$/;"	v	typeref:struct:usb_class_driver	file:
+secbulk_class	secbulk.c	/^static struct usb_class_driver secbulk_class;$/;"	v	typeref:struct:usb_class_driver	file:
+secbulk_dev	secbulk.c	/^struct secbulk_dev$/;"	s	file:
+secbulk_dev::bulk_out_endpointAddr	secbulk.c	/^	__u8	bulk_out_endpointAddr;$/;"	m	struct:secbulk_dev	file:	access:public
+secbulk_dev::bulkout_buffer	secbulk.c	/^	char*	bulkout_buffer;$/;"	m	struct:secbulk_dev	file:	access:public
+secbulk_dev::io_mutex	secbulk.c	/^	struct mutex io_mutex;$/;"	m	struct:secbulk_dev	typeref:struct:secbulk_dev::mutex	file:	access:public
+secbulk_dev::udev	secbulk.c	/^	struct usb_device *udev;$/;"	m	struct:secbulk_dev	typeref:struct:secbulk_dev::usb_device	file:	access:public
+secbulk_disconnect	secbulk.c	/^static void secbulk_disconnect(struct usb_interface *interface)$/;"	f	file:	signature:(struct usb_interface *interface)
+secbulk_driver	secbulk.c	/^static struct usb_driver secbulk_driver;$/;"	v	typeref:struct:usb_driver	file:
+secbulk_driver	secbulk.c	/^static struct usb_driver secbulk_driver= {$/;"	v	typeref:struct:usb_driver	file:
+secbulk_exit	secbulk.c	/^module_exit(secbulk_exit);$/;"	v
+secbulk_exit	secbulk.c	/^static void __exit secbulk_exit(void)$/;"	f	file:	signature:(void)
+secbulk_fops	secbulk.c	/^static struct file_operations secbulk_fops = {$/;"	v	typeref:struct:file_operations	file:
+secbulk_init	secbulk.c	/^module_init(secbulk_init);$/;"	v
+secbulk_init	secbulk.c	/^static int __init secbulk_init(void)$/;"	f	file:	signature:(void)
+secbulk_open	secbulk.c	/^static int secbulk_open(struct inode *node, struct file *file)$/;"	f	file:	signature:(struct inode *node, struct file *file)
+secbulk_probe	secbulk.c	/^static int secbulk_probe(struct usb_interface *interface, const struct usb_device_id *id)$/;"	f	file:	signature:(struct usb_interface *interface, const struct usb_device_id *id)
+secbulk_read	secbulk.c	/^static ssize_t secbulk_read(struct file *file, char __user *buf, size_t len, loff_t *loff)$/;"	f	file:	signature:(struct file *file, char __user *buf, size_t len, loff_t *loff)
+secbulk_release	secbulk.c	/^static int secbulk_release(struct inode *node, struct file *file)$/;"	f	file:	signature:(struct inode *node, struct file *file)
+secbulk_table	secbulk.c	/^static struct usb_device_id secbulk_table[]= {$/;"	v	typeref:struct:usb_device_id	file:
+secbulk_write	secbulk.c	/^static ssize_t secbulk_write(struct file *file, const char __user *buf, size_t len, loff_t *loff)$/;"	f	file:	signature:(struct file *file, const char __user *buf, size_t len, loff_t *loff)
+udev	secbulk.c	/^	struct usb_device *udev;$/;"	m	struct:secbulk_dev	typeref:struct:secbulk_dev::usb_device	file:	access:public
